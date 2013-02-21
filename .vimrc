@@ -7,3 +7,4 @@ set smartindent
 syntax on
 set nu
 set bg=dark
+set mouse=a

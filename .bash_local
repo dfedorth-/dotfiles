@@ -1,16 +1,22 @@
-CDATBUILDS="/lgm/uvcdat"
-fonts=( doom banner big bulbhead digital epic larry3d ogre puffy pyramid small smkeyboard  )
+CDATBUILDS="/export/fedorthurman1/uvcdat"
+fonts=( starwars )
 
 PYTHONSTARTUP=${HOME}/.pythonrc
+
+
+
+
 
 
 setpy() {
  source ${CDATBUILDS}/$1/bin/setup_cdat.sh
 }
 
+setpy 2012-02-20
+
 alias gst='git status'
 alias pb="python setup.py install"
-unalias emacs
+alias ll="ls -l --color -F"
 
 PROMPT_ADDRESS_COLOR=${_BLUE}
 PROMPT_COMMAND_HIST_INDEX_COLOR=${_GOLD}
